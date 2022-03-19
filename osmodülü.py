@@ -31,17 +31,17 @@ print(os.walk("C:/Users/user/Desktop"))
 for i in os.walk("C:/user/user/Desktop"):
     print(i)
 
-for klasör_yolu, klasör_isimleri,dosya_isimleri in os.walk("C:/Users/90546/Desktop"):
+for klasör_yolu, klasör_isimleri,dosya_isimleri in os.walk("C:/Users/user/Desktop"):
     print("klasör yolu: ",klasör_yolu)
     print("klasör isimleri: ",klasör_isimleri)
     print("dosya isimleri: ",dosya_isimleri)
     print("------------------------")
 
-for klasör_yolu, klasör_isimleri,dosya_isimleri in os.walk("C:/Users/90546/Desktop"):
+for klasör_yolu, klasör_isimleri,dosya_isimleri in os.walk("C:/Users/user/Desktop"):
     for i in dosya_isimleri:
         print(i)
 
-for klasör_yolu, klasör_isimleri,dosya_isimleri in os.walk("C:/Users/90546/Desktop"):
+for klasör_yolu, klasör_isimleri,dosya_isimleri in os.walk("C:/Users/user/Desktop"):
     for i in dosya_isimleri:
         if(i.endswith(".txt")):
             print(i)
