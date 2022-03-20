@@ -1,4 +1,4 @@
-"""This code is not suitable for this website is paid."""
+"""This code is not suitable for this website since it became paid."""
 
 import sys
 import requests
