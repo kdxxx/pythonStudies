@@ -1,5 +1,6 @@
-import sys
+"""This code is not suitable for this website is paid."""
 
+import sys
 import requests
 
 url = "http://api.fixer.io/latest?base="
