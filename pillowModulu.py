@@ -1,5 +1,5 @@
 from PIL import Image,ImageFilter
-
+''' you need to have the same images in your project folder.'''
 image = Image.open("kuş.jpg")
 
 image.save("kuş2.jpg")
