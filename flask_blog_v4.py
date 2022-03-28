@@ -10,7 +10,7 @@ def index():
     article["author"] = "sen"
 
 
-    return render_template("index.html",article=article)
+    return render_template("index_v4.html",article=article)
 
 
 if __name__ == "__main__":
