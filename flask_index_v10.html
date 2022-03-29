@@ -1,0 +1,19 @@
+{% extends "flask_layout_v10.html" %}
+
+
+{% block body %}
+
+<div class = "jumbotron text-center">
+<h3> Bloğa Hoşgeldin </h3>
+<p> Sen de yaz bi yazı </p>
+</div>
+
+{% if islem == 1 %}
+<p> 1. islem</p>
+{% elif islem == 2 %}
+<p> 2. islem</p>
+{% else %}
+<p> 3. islem </p>
+{% endif %}
+
+{% endblock body %}
