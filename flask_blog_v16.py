@@ -18,9 +18,6 @@ class RegisterForm(Form):
     confirm = PasswordField("Parola doğrula")
 
 
-
-
-
 app = Flask(__name__)
 
 app.config["MYSQL_HOST"] = "localhost"
