@@ -1,4 +1,3 @@
-
 import email
 from flask import Flask,render_template,flash, redirect,url_for,session,logging,request
 from flask_mysqldb import MySQL
@@ -149,7 +148,7 @@ def addarticle():
 
         mysql.connnection.commit()
         cursor.close()
-        flash("makale eklendi...","success")
+        flash("makale eklendi","success")
         return redirect(url_for("dashboard"))
         
     return render_template("addarticle.html",form = form)
