@@ -6,6 +6,7 @@ from wtforms import Form,StringField,TextAreaField,PasswordField,validators
 from passlib.hash import sha256_crypt
 from functools import wraps
 
+
 #kullanıcı giriş decorator
 def login_required(f):
     @wraps(f)
@@ -227,7 +228,6 @@ def update(id):
             form.title.data = article["title"]
             form.content.data = article["content"]
             return render_template("update.html",form=form)
-
 
     else:
         #Post request 
