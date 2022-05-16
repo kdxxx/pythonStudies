@@ -7,7 +7,7 @@ from passlib.hash import sha256_crypt
 from functools import wraps
 
 
-#kullanıcı giriş decorator
+#Kullanıcı giriş decorator
 def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
