@@ -6,5 +6,11 @@
        <h3> Hoşgeldin</h3>
        <p> yazı yaz bir tane...</P> 
 </div>
+<ul>
 
-{% endblock body %}
+{% for number in numbers %}
+<li>{{number}}</li>
+{% endfor %}
+</ul>
+
+{% endblock body %}static
