@@ -20,5 +20,5 @@ from article.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',index,name="index") # for making the welcome page
+    path('',views.index,name="index") # for making the welcome page
 ]
