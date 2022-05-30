@@ -8,5 +8,8 @@ def index(request):
     #return HttpResponse("<h3>Ana Sayfa</h3>")
     return render(request,"index.html",context)
 
-def abou(request):
+def about(request):
     return render(request="about.html")
+
+def detail(request,id):
+    return HttpResponse("Detail:"+str(id))
