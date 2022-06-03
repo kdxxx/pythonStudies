@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
-from article.views import index
+from .views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,5 +24,5 @@ urlpatterns = [
     path('about/', views.about,name="about"),
     path('detail/<int:id>', views.detail, name= "detail"),
     path('articles/',include("articles.urls")),
-
+    path('user/',include("user.urls"))
 ]
