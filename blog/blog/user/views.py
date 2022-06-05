@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from .forms import RegisterForm
-
+from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import login
 
@@ -15,6 +15,7 @@ def register(request):
             newUser.set_password(password)
             newUser.save()
             login(request,newUser)
+            messages.success(request,"Kullanıcı başarıyla kayıt oldu")
 
             return redirect("index")
     context = {
